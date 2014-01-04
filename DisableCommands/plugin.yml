@@ -1,0 +1,38 @@
+name: DisableCommands
+version: 1.2
+authors: [lst96, Mindfulhacker]
+main: net.mindfulhacker.disablecommands.DisableCommands
+description: Disable commands easily
+commands:
+  disablecommands:
+    description: Allows addition, listing, and removing commands from the forbidden commands list.
+    usage: |
+      /disablecommands - Shows the help menu
+      /disablecommands add <command> - Adds to the disabled commands list (Don't add /)
+      /disablecommands remove <command> - Removes a command from the disabled commands list.
+      /disablecommands list - Lists all the disabled commands.
+      /disablecommands reload - Reloads the configuration file.
+permissions:
+  disablecommands.*:
+    description: Gives all permissions to do with DisableCommands
+    children:
+      disablecommands.bypass: true
+      disablecommands.add: true
+      disablecommands.remove: true
+      disablecommands.list: true
+      disablecommands.reload: true
+  disablecommands.bypass:
+    description: Bypasses command blocker
+    default: false
+  disablecommands.add:
+    description: Adds to the disabled commands list
+    default: false
+  disablecommands.remove:
+    description: Removes from the disabled commands list
+    default: false
+  disablecommands.list:
+    description: Lists all the disabled commands
+    default: false
+  disablecommands.reload:
+    description: Reloads the configuration file.
+    default: false

@@ -1,0 +1,8 @@
+# Default Configuration generated with DisableCommands v1.2
+Messages:
+  Command Deny Message: That command is not allowed!
+  Permission Deny Message: You do not have permission to do that!
+  Already Forbidden Message: That command is already forbidden!
+  Not Forbidden Message: That command is not forbidden!
+autoupdate: true
+check_bukkit_compatibility: false
